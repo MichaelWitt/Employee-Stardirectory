@@ -1,2 +1,2 @@
 # Employee-Stardirectory
-Looking for a place to catalogue your employees? Then Employee Stardirectory is the place for you!
+Looking for a place to catalog your employees? Employee Stardirectory is the place for you!
