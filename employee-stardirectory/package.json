@@ -1,5 +1,6 @@
 {
   "name": "employee-stardirectory",
+  "homepage": "https://michaelwitt.github.io/employee-stardirectory",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
