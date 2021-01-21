@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component} from "react";
 import API from "../utils/API";
 
 // Hooks Example
@@ -38,7 +38,10 @@ class EmployeeTable extends Component {
                     <thead>
                         <tr>
                             <th>Name</th>
+                            <th>Picture</th>
                             <th>Phone</th>
+                            <th>Location</th>
+                            <th>Age</th>
                         </tr> 
                     </thead>
                     <tbody>
@@ -46,7 +49,10 @@ class EmployeeTable extends Component {
                         return (
                             <tr>
                                 <td>{user.name.first + " " + user.name.last}</td>
+                                <td><img src={user.picture.medium}></img></td>
                                 <td>{user.phone}</td>
+                                <td>{user.location.city}</td>
+                                <td>{user.dob.age}</td>
                             </tr>
                             )
                     })}
