@@ -39,7 +39,9 @@ class EmployeeTable extends Component {
                         <tr>
                             <th>Star</th>
                             <th>Name</th>
+                            <th>Email</th>
                             <th>Phone</th>
+                            <th>Username</th>
                             <th>Location</th>
                             <th>Age</th>
                         </tr> 
@@ -50,8 +52,10 @@ class EmployeeTable extends Component {
                             <tr key={user.id.value}>
                                 <td><img src={user.picture.medium} alt='Employees'></img></td>
                                 <td>{user.name.first + " " + user.name.last}</td>
+                                <td>{user.email}</td>
                                 <td>{user.phone}</td>
-                                <td>{user.location.city}</td>
+                                <td>{user.login.username}</td>
+                                <td>{user.location.city + ', ' + user.location.state}</td>
                                 <td>{user.dob.age}</td>
                             </tr>
                             )
