@@ -37,8 +37,8 @@ class EmployeeTable extends Component {
                 <table>
                     <thead>
                         <tr>
+                            <th>Star</th>
                             <th>Name</th>
-                            <th>Picture</th>
                             <th>Phone</th>
                             <th>Location</th>
                             <th>Age</th>
@@ -48,8 +48,8 @@ class EmployeeTable extends Component {
                     {this.state.filteredUsers.map(user => { 
                         return (
                             <tr>
+                                <td><img src={user.picture.medium} alt='Employees'></img></td>
                                 <td>{user.name.first + " " + user.name.last}</td>
-                                <td><img src={user.picture.medium}></img></td>
                                 <td>{user.phone}</td>
                                 <td>{user.location.city}</td>
                                 <td>{user.dob.age}</td>
