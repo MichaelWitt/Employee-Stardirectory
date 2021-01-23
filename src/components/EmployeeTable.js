@@ -1,78 +1,45 @@
-import React, { Component} from "react";
-import API from "../utils/API";
-
-// Hooks Example
-// function EmpTable () {
-//     const [getUserList, setUserList] = useState([])
-//     setUserList(results.data.resutlts)
-//     getUserList()
-// }
+import React, { Component } from "react";
+import MaterialTable from "material-table";
 
 class EmployeeTable extends Component {
-    state = {
-        order: "descending",
-        filteredUsers: [],
-    }
+  render() {
+    return (
+      <div style={{ maxWidth: "100%" }}>
+        <MaterialTable
+          columns={[
+            { title: "star", field: "star" },
+            { title: "name", field: "name" },
+            { title: "email", field: "email" },
+            { title: "phone", field: "phone" },
+            { title: "username", field: "username" },
+            { title: "location", field: "location" },
+            { title: "age", field: "age" },
+          ]}
+          data={[
+            {
+              name: "Michael",
+              email: "Wittorp",
+              phone: "910-599-4722",
+              username: "michaelwitt",
+              location: "Wilmington, NC",
+              age: "28",
+            },
+            {
+              name: "Charles",
+              email: "Wittorp",
+              phone: "910-599-4721",
+              username: "superwitt",
+              location: "Orlando, NC",
+              age: "29",
+            },
+          ]}
+          title="Demo Title"
+        />
+      </div>
+    );
+  }
+}
 
-    users = [];
-
-    // create a handleSort function that sorts the data list on click
-    // if this.state.order = descendging, make it ascending and vise versa
-
-    // if this.state.order is asc || dec, have a functino that alphabatizes the data based on last name (google alphabatize elements in an array)
-
-    componentDidMount() {
-        API.getUsers().then(results => {
-            this.users = results.data.results;
-            console.log('this.users:', this.users)
-            this.setState({
-                filteredUsers: this.users
-            });   
-        })
-    }
-
-    render() {
-        return (
-            <div>
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th>Star</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Username</th>
-                            <th>Location</th>
-                            <th>Age</th>
-                        </tr> 
-                    </thead>
-                    <tbody>
-                    {this.state.filteredUsers.map(user => { 
-                        return (
-                            <tr key={user.id.value}>
-                                <td><img src={user.picture.medium} alt='Employees'></img></td>
-                                <td>{user.name.first + " " + user.name.last}</td>
-                                <td>{user.email}</td>
-                                <td>{user.phone}</td>
-                                <td>{user.login.username}</td>
-                                <td>{user.location.city + ', ' + user.location.state}</td>
-                                <td>{user.dob.age}</td>
-                            </tr>
-                            )
-                    })}
-                    </tbody>
-                </table>
-            </div>
-        )
-    }
-};
-
-/* this.state.users.map(user => {
-                        return (
-                            <UserRow 
-                                lastName={user.name.last} 
-                                phone={user.phone}
-                            />)
-                    })}*/
+// ReactDOM.render(<EmployeeTable />, document.getElementById("root"));
 
 export default EmployeeTable;
