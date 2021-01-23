@@ -7,33 +7,33 @@ class EmployeeTable extends Component {
       <div style={{ maxWidth: "100%" }}>
         <MaterialTable
           columns={[
-            { title: "star", field: "star" },
-            { title: "name", field: "name" },
-            { title: "email", field: "email" },
-            { title: "phone", field: "phone" },
-            { title: "username", field: "username" },
-            { title: "location", field: "location" },
-            { title: "age", field: "age" },
+            { title: "Star", field: "star" },
+            { title: "Name", field: "name" },
+            { title: "Email", field: "email" },
+            { title: "Phone", field: "phone" },
+            { title: "Username", field: "username" },
+            { title: "Location", field: "location" },
+            { title: "Age", field: "age" },
           ]}
           data={[
             {
-              name: "Michael",
-              email: "Wittorp",
+              name: "Michael Wittorp",
+              email: "Mikewittorp@gmail.com",
               phone: "910-599-4722",
               username: "michaelwitt",
               location: "Wilmington, NC",
               age: "28",
             },
             {
-              name: "Charles",
-              email: "Wittorp",
+              name: "Charles Wittorp",
+              email: "Charleswittorp@gmail.com",
               phone: "910-599-4721",
               username: "superwitt",
               location: "Orlando, NC",
               age: "29",
             },
           ]}
-          title="Demo Title"
+          title="⭑"
         />
       </div>
     );
