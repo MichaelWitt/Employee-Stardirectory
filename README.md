@@ -36,6 +36,8 @@ https://github.com/MichaelWitt/Employee-Stardirectory/commits/
 
 UNC Coding Bootcamp And Trilogy for the inspiration.
 
+As well as NPM Material-Table, Bootstrap, React, Axios, and other NPM Packages.
+
 Thanks!
 
 ## Thanks For Visiting!
