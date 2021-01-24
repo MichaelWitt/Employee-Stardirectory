@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 
-class EmployeeTable extends Component {
+class DataTable extends Component {
   state = {
     order: "descending",
     filteredUsers: [],
@@ -57,4 +57,4 @@ class EmployeeTable extends Component {
   }
 }
 
-export default EmployeeTable;
+export default DataTable;
