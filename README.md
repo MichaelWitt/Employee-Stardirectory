@@ -6,25 +6,25 @@ Looking for a place to catalog your employees? We have you covered. Employee Sta
 
 Welcome to the Employee Stardirectory!
 
-Details
+This application was developed and created for star companies near and far. Keep track of all the employees that work for your company in a slick, easy to use database, that catalogs crucial employee data. A search bar is included for high-functionality and performance, so as to find employees in an instance. The database even sorts users in ascending and descending order, depending on your desired output. We believe you are going to fall in love with the Employee Stardirectory.
 
 Thanks for stopping in!
 
 ## Application
 
-<!-- Budget Bilder: https://budget-bilder.herokuapp.com/
+Employee Stardirectory: https://michaelwitt.github.io/Employee-Stardirectory/
 
-Welcome: ![Screenshot](./public/imgs/budget-bilder.png) -->
+Welcome: ![Screenshot](./public/img/website.png)
 
 ## Build Details
 
-<!-- This application was developed using: JavaScript, Progressive Web Applications, Service Worker, Node.js, Manifest, indexedDB, icons, API routes, Express, and more!  -->
+This application was developed using: React.js, Components, Material-Table, Axios, Bootstrap, JavaScript, Node.js, the Random User API, and more!
 
 ## Repository & Preview
 
 View the repository at: https://github.com/MichaelWitt/Employee-Stardirectory
 
-<!-- Preview: ![Screenshot](./public/imgs/demo.png) -->
+Preview: ![Screenshot](./public/img/preview.png)
 
 ## Updates
 
@@ -36,7 +36,7 @@ https://github.com/MichaelWitt/Employee-Stardirectory/commits/
 
 UNC Coding Bootcamp And Trilogy for the inspiration.
 
-As well as NPM Material-Table, Bootstrap, React, Axios, and other NPM Packages.
+As well as NPM Material-Table, Random User API, Bootstrap, React, Axios, and other NPM Packages.
 
 Thanks!
 
