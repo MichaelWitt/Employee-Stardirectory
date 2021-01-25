@@ -1,10 +1,10 @@
 import React from "react";
 
 const styles = {
-headline: {
-    textAlign: 'center', 
-  }
-}
+  headline: {
+    textAlign: "center",
+  },
+};
 
 function Header() {
   return (

@@ -39,24 +39,23 @@ class EmployeeTable extends Component {
             { title: "Age", field: "age" },
           ]}
           data={this.state.filteredUsers.map((user) => {
-                let tableData={
-                star: `${user.picture.medium}`,
-                name: `${user.name.first + " " + user.name.last}`,
-                email: `${user.email}`,
-                phone: `${user.phone}`,
-                username: `${user.login.username}`,
-                location: `${user.location.city + ", " + user.location.state}`,
-                age: `${user.dob.age}`,
-              }
-              return tableData;
-          })
-          }
+            let tableData = {
+              star: `${user.picture.medium}`,
+              name: `${user.name.first + " " + user.name.last}`,
+              email: `${user.email}`,
+              phone: `${user.phone}`,
+              username: `${user.login.username}`,
+              location: `${user.location.city + ", " + user.location.state}`,
+              age: `${user.dob.age}`,
+            };
+            return tableData;
+          })}
           options={{
-        paging:true,
-        pageSize:50,       // make initial page size
-        emptyRowsWhenPaging: true,   //to make page size fix in case of less data rows
-        pageSizeOptions:[6,12,20,50],    // rows selection options
-      }}
+            paging: true,
+            pageSize: 50,
+            emptyRowsWhenPaging: true,
+            pageSizeOptions: [6, 12, 20, 50],
+          }}
           title="⭑"
         />
       </div>
