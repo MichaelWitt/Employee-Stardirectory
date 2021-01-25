@@ -21,27 +21,26 @@ class EmployeeTable extends Component {
   }
 
   render() {
-    return this.state.filteredUsers.map((user) => {
-      return (
-        <div style={{ maxWidth: "100%" }}>
-          <MaterialTable
-            columns={[
-              {
-                title: "Star",
-                field: "star",
-                render: (rowData) => (
-                  <img src={rowData.star} alt={rowData.star} />
-                ),
-              },
-              { title: "Name", field: "name" },
-              { title: "Email", field: "email" },
-              { title: "Phone", field: "phone" },
-              { title: "Username", field: "username" },
-              { title: "Location", field: "location" },
-              { title: "Age", field: "age" },
-            ]}
-            data={[
-              {
+    return (
+      <div style={{ maxWidth: "100%" }}>
+        <MaterialTable
+          columns={[
+            {
+              title: "Star",
+              field: "star",
+              render: (rowData) => (
+                <img src={rowData.star} alt={rowData.star} />
+              ),
+            },
+            { title: "Name", field: "name" },
+            { title: "Email", field: "email" },
+            { title: "Phone", field: "phone" },
+            { title: "Username", field: "username" },
+            { title: "Location", field: "location" },
+            { title: "Age", field: "age" },
+          ]}
+          data={this.state.filteredUsers.map((user) => {
+                let tableData={
                 star: `${user.picture.medium}`,
                 name: `${user.name.first + " " + user.name.last}`,
                 email: `${user.email}`,
@@ -49,13 +48,14 @@ class EmployeeTable extends Component {
                 username: `${user.login.username}`,
                 location: `${user.location.city + ", " + user.location.state}`,
                 age: `${user.dob.age}`,
-              },
-            ]}
-            title="⭑"
-          />
-        </div>
-      );
-    });
+              }
+              return tableData;
+          })
+          }
+          title="⭑"
+        />
+      </div>
+    );
   }
 }
 

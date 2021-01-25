@@ -57,4 +57,6 @@ class DataTable extends Component {
   }
 }
 
+// return this.state.filteredUsers.map((user) => {
+
 export default DataTable;
