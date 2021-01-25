@@ -4,7 +4,6 @@ import API from "../utils/API";
 
 class EmployeeTable extends Component {
   state = {
-    order: "descending",
     filteredUsers: [],
   };
 
@@ -52,6 +51,12 @@ class EmployeeTable extends Component {
               return tableData;
           })
           }
+          options={{
+        paging:true,
+        pageSize:50,       // make initial page size
+        emptyRowsWhenPaging: true,   //to make page size fix in case of less data rows
+        pageSizeOptions:[6,12,20,50],    // rows selection options
+      }}
           title="⭑"
         />
       </div>
